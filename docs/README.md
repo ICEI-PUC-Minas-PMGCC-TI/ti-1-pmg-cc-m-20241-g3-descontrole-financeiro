@@ -118,9 +118,14 @@ Atualizações e Manutenção
 ## Referencias 
 
 https://meubolsoemdia.com.br
+
 https://www.youtube.com/@CVMEducacional
+
 https://creately.com/blog/pt/diagrama/como-fazer-um-diagrama-de-fluxo-do-usuario/
+
 https://help.marvelapp.com/hc/en-us/articles/360002536038-A-guide-to-creating-your-first-prototype
+
 https://blog.softexpert.com/gestao-da-inovacao-como-escolher-e-implementar-as-melhores-ideias/#:~:text=O%20que%20%C3%A9%20a%20prioriza%C3%A7%C3%A3o,determinados%20crit%C3%A9rios%20estabelecidos%20pela%20organiza%C3%A7%C3%A3o.
+
 https://uds.com.br/blog/design-thinking-o-que-e-e-como-aplicar/
 
