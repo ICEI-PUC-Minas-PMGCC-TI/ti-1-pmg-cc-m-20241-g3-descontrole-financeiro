@@ -46,14 +46,7 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
-
-**Links Úteis**:
-
-- [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-- [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+O foco principal do nosso projeto são jovens universitários de 18 a 25 anos. Este grupo é composto por estudantes universitários, que geralmente têm dificuldades financeiras e usam cartões de crédito pela primeira vez. O conhecimento financeiro que eles adquirem pode ter um grande impacto em seu futuro financeiro porque estão em uma fase importante de suas vidas. 
 
 ## Personas
 ![persona](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-m-20241-g3-descontrole-financeiro/assets/88544050/9c45adb2-767f-4709-a37a-0df83e97eee2)
