@@ -61,12 +61,45 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 
 ## Histórias de Usuários
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+História 1 : 
 
-**Links Úteis**:
+Andréa, 21 anos 
 
-- [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-- [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+Andréa é uma estudante universitária em seu segundo ano de faculdade. Ela vem de uma família de classe média, mas seus pais não têm muita experiência em questões financeiras. Andréa recebeu um cartão de crédito logo que ingressou na faculdade e começou a usá-lo para cobrir suas despesas cotidianas, como livros, alimentação fora do campus e roupas. Ela não tem um plano financeiro sólido e muitas vezes paga apenas o pagamento mínimo mensal em sua fatura do cartão de crédito. Andréa está começando a perceber que suas dívidas estão se acumulando rapidamente e está preocupada com seu futuro financeiro. 
+
+ 
+
+Historia 2: 
+
+Lucas ,20 anos 
+
+Lucas é um estudante universitário de último ano, conhecido por seu estilo de vida extravagante e impulsivo. Ele vem de uma família rica e sempre teve acesso a recursos financeiros abundantes. Lucas vê seu cartão de crédito como uma extensão de sua renda disponível e não se preocupa muito com os detalhes financeiros. Ele gasta livremente em roupas de grife, jantares caros e viagens com amigos, sem considerar o impacto em suas finanças futuras. Lucas tem o hábito de pagar apenas o mínimo em sua fatura do cartão de crédito, o que resultou em uma dívida significativa ao longo do tempo 
+
+ 
+
+Historia 3: 
+
+Camila, 21 anos 
+
+Camila é uma estudante universitária dedicada em seu terceiro ano de faculdade. Ela vem de uma família de classe média e aprendeu desde cedo a importância de gerenciar suas finanças com responsabilidade. Camila possui um cartão de crédito, mas o utiliza com parcimônia e apenas para despesas essenciais, como materiais de estudo, transporte e emergências. Ela sempre paga o saldo total de sua fatura a cada mês e procura maneiras de economizar e investir seu dinheiro de forma inteligente. Camila está determinada a evitar o endividamento e construir uma base sólida para sua independência financeira no futuro. 
+
+História 4: 
+
+Rafael, 22 anos 
+
+Rafael é um estudante universitário em seu quarto ano de faculdade. Vindo de uma família de baixa renda, Rafael sempre teve que lidar com desafios financeiros desde cedo. Ele recebeu um cartão de crédito como uma forma de ajuda financeira para cobrir suas despesas enquanto estudava. Rafael tenta ser cuidadoso com seus gastos, mas muitas vezes se vê sobrecarregado pelas contas da faculdade, aluguel e outras despesas. Ele geralmente paga o valor mínimo da fatura do cartão de crédito, mas às vezes fica para trás devido às dificuldades financeiras. Rafael está determinado a concluir seus estudos e encontrar um emprego bem remunerado para sair dessa situação financeira difícil. 
+
+História 5: 
+
+Mariana, 19 anos 
+
+Mariana é uma caloura na universidade, animada com sua nova jornada acadêmica. Ela vem de uma família de classe média e recebeu um cartão de crédito como presente de aniversário quando completou 18 anos. Mariana está aprendendo a administrar suas finanças enquanto estuda e trabalha meio período. Ela usa seu cartão de crédito principalmente para emergências e pequenas compras, como lanches entre as aulas e materiais escolares. Mariana sempre paga o saldo total de sua fatura e está determinada a evitar o endividamento desde cedo, seguindo o exemplo de seus pais, que são adeptos de uma gestão financeira responsável. 
+
+História 6: 
+
+Pedro, 23 anos 
+
+Pedro é um estudante universitário em seu último ano de faculdade, estudando administração de empresas. Ele vem de uma família de empreendedores e sempre teve uma forte influência em questões financeiras desde jovem. Pedro é extremamente consciente sobre suas finanças e usa seu cartão de crédito com sabedoria. Ele monitora cuidadosamente seus gastos, aproveita as recompensas do cartão e sempre paga o saldo total de sua fatura antes do vencimento. Pedro está determinado a construir um futuro financeiro sólido para si mesmo e tem planos de iniciar seu próprio negócio após a graduação
 
 ## Requisitos
 
