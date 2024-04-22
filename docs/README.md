@@ -20,15 +20,7 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-**Links Úteis**:
-
-- [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-- [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-- [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Neste documento o tema abordado será “O Descontrole Financeiro de Jovens Universitários que Possuem Cartão de Crédito”, em que pesquisamos e analisamos as principais causas e efeitos da problemática para o nosso público-alvo. Os jovens universitários enfrentam desafios financeiros devido à falta de educação financeira e ao uso inadequado de cartões de crédito. Isso leva a endividamento excessivo, gastos impulsivos e estresse financeiro, afetando negativamente seu desempenho acadêmico e bem-estar. É necessário oferecer uma solução abrangente para educar, capacitar e apoiar esses jovens na gestão de suas finanças pessoais. Sendo assim, o objetivo do grupo é criar uma solução para essa problemática.
 
 ## Objetivos
 
@@ -36,13 +28,7 @@ O objetivo deste projeto é desenvolver um site de educação financeira voltado
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-**Links Úteis**:
-
-- [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O projeto é crucial porque há uma crescente necessidade de capacitar e apoiar jovens universitários na gestão financeira consciente. A falta de educação financeira e o uso imprudente de cartões de crédito resultam em endividamento e estresse financeiro, o que afeta negativamente o bem-estar e o desempenho acadêmico. Ao fornecer aos jovens conhecimentos e habilidades financeiras, eles serão protegidos de armadilhas financeiras e preparados para uma vida financeira saudável e estável no futuro.
 
 ## Público-Alvo
 
