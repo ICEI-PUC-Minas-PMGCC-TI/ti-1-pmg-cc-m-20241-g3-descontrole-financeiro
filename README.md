@@ -1,18 +1,19 @@
-# Nome do projeto
+# Crédito Inteligente
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+O objetivo deste projeto é desenvolver um aplicativo de educação financeira voltado para jovens universitários, oferecendo recursos e ferramentas para promover o uso responsável de cartões de crédito e a gestão financeira saudável. Este documento servirá como guia abrangente para o desenvolvimento, implementação e manutenção do aplicativo.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-
+* Arthur Augusto
+* Filipe Reis
+* Guilherme Alves
+* Leonardo Rodrigues
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Rommel Vieira Carneiro
+* João Carlos Oliveira Caetano
+* Luciana Mara Freitas Diniz
+* Pedro Henrique Ramos Costa
 
 ## Instruções de utilização
 
