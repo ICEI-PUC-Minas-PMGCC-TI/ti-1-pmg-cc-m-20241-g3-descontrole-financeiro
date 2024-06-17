@@ -13,16 +13,22 @@ codigo/  (essa pasta aqui)
 │
 ├── assets/
 │   ├── css/
-│   │   ├── styles.css
-│   │   └── (outros arquivos .css)
+│   │   ├── pagina.css
+│   │ 
 │   │
 │   ├── js/
-│   │   ├── main.js
-│   │   └── (outros arquivos .js)
+│   │   ├── script.js
+│   │ 
 │   │
 │   ├── images/
-│   │   ├── logo.png
-│   │   └── (outras imagens)
+│   │   ├── CHAT.JPG
+│   │   └── ESTUDO.PNG
+│   │   └── METAS.JPG
+│   │   └── PERFIL.PNG
+│   │   └── estudo
+│   │   └── estudo
+│   │   └── estudo 
+│   │
 │   │
 │   └── fonts/
 │       ├── font1.ttf
