@@ -6,7 +6,7 @@ crédito e a gestão financeira saudável. Este documento servirá como guia abr
 desenvolvimento, implementação e manutenção do aplicativo.
 ## Alunos integrantes da equipe
 
-*Arthur Augusto Domingos Silva
+* Arthur Augusto Domingos Silva
 * Filipe Reis Gregory Tavares
 * Guilherme Alves Faria
 * Leonardo Rodrigues Fontenelle
