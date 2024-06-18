@@ -25,20 +25,31 @@ codigo/  (essa pasta aqui)
 │   │   └── ESTUDO.PNG
 │   │   └── METAS.JPG
 │   │   └── PERFIL.PNG
-│   │   └── estudo
-│   │   └── estudo
-│   │   └── estudo 
+│   │   └── png-clipart-devine-icons-part-2-white-gear-illustration-thumbnail-removebg-preview.PNG
+│   │   └── transferir__2_-removebg-preview.PNG
+│   │   └── WhatsApp_Image_2024-04-21_at_16.14.34-removebg-preview.PNG
 │   │
 │   │
-│   └── fonts/
-│       ├── font1.ttf
-│       └── (outras fontes)
+│   └── video/
+│       ├── VEM.MP4
+│       └── vem-celular_zE8PoHQ2 (1).MP4
+│       └── 1118749_4k_Numbers_Economy_1280x720.MP4
+│       └── Apresentação de Portfólio Tecnologia Moderno Azul Branco (1).MP4
+│       └── inicial2 (1).MP4
+│       └── inicial2.MP4
+│       └── VEM (1).MP4
+│
 │
 ├── pages/
-│   ├── about.html
-│   ├── contact.html
-│   └── (outras páginas)
-│
+│   ├── telainicial.html
+│   ├── limitedecredito.html
+│   └── metas.html
+│   └──estudo.html
+│   └──EDITARUSUARIO.html
+│   └──batepapo.html
+│   └──alterarsenha.html
+│   └──cadastro.html
+│   └──calculadora.html
 └── README.md
 ```
 
