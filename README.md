@@ -1,10 +1,16 @@
 # Crédito Inteligente
 
+=======
+
+O objetivo deste projeto é desenvolver um aplicativo de educação financeira voltado para jovens universitários, oferecendo recursos e ferramentas para promover o uso responsável de cartões de crédito e a gestão financeira saudável. Este documento servirá como guia abrangente para o desenvolvimento, implementação e manutenção do aplicativo.
+
+
 O objetivo deste projeto é desenvolver um site de educação financeira voltado para jovens
 universitários, oferecendo recursos e ferramentas para promover o uso responsável de cartões de
 crédito e a gestão financeira saudável. Este documento servirá como guia abrangente para o
 desenvolvimento, implementação e manutenção do aplicativo.
 ## Alunos integrantes da equipe
+
 
 * Arthur Augusto Domingos Silva
 * Filipe Reis Gregory Tavares
@@ -16,6 +22,18 @@ desenvolvimento, implementação e manutenção do aplicativo.
 * Rommel Vieira Carneiro
 * Luciana Mara Freitas Diniz
 * João Carlos Oliveira Caetano
+=======
+* Arthur Augusto
+* Filipe Reis
+* Guilherme Alves
+* Leonardo Rodrigues
+## Professores responsáveis
+
+* Rommel Vieira Carneiro
+* João Carlos Oliveira Caetano
+* Luciana Mara Freitas Diniz
+* Pedro Henrique Ramos Costa
+
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.

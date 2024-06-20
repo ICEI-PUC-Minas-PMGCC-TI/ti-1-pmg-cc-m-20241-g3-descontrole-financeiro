@@ -20,112 +20,112 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-**Links Úteis**:
-
-- [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-- [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-- [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Neste documento o tema abordado será “O Descontrole Financeiro de Jovens Universitários que Possuem Cartão de Crédito”, em que pesquisamos e analisamos as principais causas e efeitos da problemática para o nosso público-alvo. Os jovens universitários enfrentam desafios financeiros devido à falta de educação financeira e ao uso inadequado de cartões de crédito. Isso leva a endividamento excessivo, gastos impulsivos e estresse financeiro, afetando negativamente seu desempenho acadêmico e bem-estar. É necessário oferecer uma solução abrangente para educar, capacitar e apoiar esses jovens na gestão de suas finanças pessoais. Sendo assim, o objetivo do grupo é criar uma solução para essa problemática.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
-
-**Links Úteis**:
-
-- [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo deste projeto é desenvolver um site de educação financeira voltado para jovens universitários, oferecendo recursos e ferramentas para promover o uso responsável de cartões de crédito e a gestão financeira saudável. Este documento servirá como guia abrangente para o desenvolvimento, implementação e manutenção do aplicativo.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-**Links Úteis**:
-
-- [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O projeto é crucial porque há uma crescente necessidade de capacitar e apoiar jovens universitários na gestão financeira consciente. A falta de educação financeira e o uso imprudente de cartões de crédito resultam em endividamento e estresse financeiro, o que afeta negativamente o bem-estar e o desempenho acadêmico. Ao fornecer aos jovens conhecimentos e habilidades financeiras, eles serão protegidos de armadilhas financeiras e preparados para uma vida financeira saudável e estável no futuro.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
-
-**Links Úteis**:
-
-- [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-- [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+O foco principal do nosso projeto são jovens universitários de 18 a 25 anos. Este grupo é composto por estudantes universitários, que geralmente têm dificuldades financeiras e usam cartões de crédito pela primeira vez. O conhecimento financeiro que eles adquirem pode ter um grande impacto em seu futuro financeiro porque estão em uma fase importante de suas vidas. 
 
 ## Personas
+![persona](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-m-20241-g3-descontrole-financeiro/assets/88544050/9c45adb2-767f-4709-a37a-0df83e97eee2)
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
-
-**Links Úteis**:
-
-- [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-- [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-- [Rock Content](https://rockcontent.com/blog/personas/)
-- [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
 
 ## Histórias de Usuários
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+História 1 : 
 
-**Links Úteis**:
+Andréa, 21 anos 
 
-- [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-- [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+Andréa é uma estudante universitária em seu segundo ano de faculdade. Ela vem de uma família de classe média, mas seus pais não têm muita experiência em questões financeiras. Andréa recebeu um cartão de crédito logo que ingressou na faculdade e começou a usá-lo para cobrir suas despesas cotidianas, como livros, alimentação fora do campus e roupas. Ela não tem um plano financeiro sólido e muitas vezes paga apenas o pagamento mínimo mensal em sua fatura do cartão de crédito. Andréa está começando a perceber que suas dívidas estão se acumulando rapidamente e está preocupada com seu futuro financeiro. 
+
+ 
+
+Historia 2: 
+
+Lucas ,20 anos 
+
+Lucas é um estudante universitário de último ano, conhecido por seu estilo de vida extravagante e impulsivo. Ele vem de uma família rica e sempre teve acesso a recursos financeiros abundantes. Lucas vê seu cartão de crédito como uma extensão de sua renda disponível e não se preocupa muito com os detalhes financeiros. Ele gasta livremente em roupas de grife, jantares caros e viagens com amigos, sem considerar o impacto em suas finanças futuras. Lucas tem o hábito de pagar apenas o mínimo em sua fatura do cartão de crédito, o que resultou em uma dívida significativa ao longo do tempo 
+
+ 
+
+Historia 3: 
+
+Camila, 21 anos 
+
+Camila é uma estudante universitária dedicada em seu terceiro ano de faculdade. Ela vem de uma família de classe média e aprendeu desde cedo a importância de gerenciar suas finanças com responsabilidade. Camila possui um cartão de crédito, mas o utiliza com parcimônia e apenas para despesas essenciais, como materiais de estudo, transporte e emergências. Ela sempre paga o saldo total de sua fatura a cada mês e procura maneiras de economizar e investir seu dinheiro de forma inteligente. Camila está determinada a evitar o endividamento e construir uma base sólida para sua independência financeira no futuro. 
+
+História 4: 
+
+Rafael, 22 anos 
+
+Rafael é um estudante universitário em seu quarto ano de faculdade. Vindo de uma família de baixa renda, Rafael sempre teve que lidar com desafios financeiros desde cedo. Ele recebeu um cartão de crédito como uma forma de ajuda financeira para cobrir suas despesas enquanto estudava. Rafael tenta ser cuidadoso com seus gastos, mas muitas vezes se vê sobrecarregado pelas contas da faculdade, aluguel e outras despesas. Ele geralmente paga o valor mínimo da fatura do cartão de crédito, mas às vezes fica para trás devido às dificuldades financeiras. Rafael está determinado a concluir seus estudos e encontrar um emprego bem remunerado para sair dessa situação financeira difícil. 
+
+História 5: 
+
+Mariana, 19 anos 
+
+Mariana é uma caloura na universidade, animada com sua nova jornada acadêmica. Ela vem de uma família de classe média e recebeu um cartão de crédito como presente de aniversário quando completou 18 anos. Mariana está aprendendo a administrar suas finanças enquanto estuda e trabalha meio período. Ela usa seu cartão de crédito principalmente para emergências e pequenas compras, como lanches entre as aulas e materiais escolares. Mariana sempre paga o saldo total de sua fatura e está determinada a evitar o endividamento desde cedo, seguindo o exemplo de seus pais, que são adeptos de uma gestão financeira responsável. 
+
+História 6: 
+
+Pedro, 23 anos 
+
+Pedro é um estudante universitário em seu último ano de faculdade, estudando administração de empresas. Ele vem de uma família de empreendedores e sempre teve uma forte influência em questões financeiras desde jovem. Pedro é extremamente consciente sobre suas finanças e usa seu cartão de crédito com sabedoria. Ele monitora cuidadosamente seus gastos, aproveita as recompensas do cartão e sempre paga o saldo total de sua fatura antes do vencimento. Pedro está determinado a construir um futuro financeiro sólido para si mesmo e tem planos de iniciar seu próprio negócio após a graduação
 
 ## Requisitos
 
-Os requisitos de um projeto são classificados em dois grupos:
+Requisitos Funcionais: Processo de Transação
+Limite de Crédito
+Monitoramento de Fraudes
+Calculadora de Juros
+Assistente Virtual
+Metas Financeiras
+Comunidade de Usuários
+Notificações de Pagamento
+Gestão de Contas
+Desafios Financeiros
 
-- [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
-  correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
-
-Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
-**Links Úteis**:
-
-- [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-- [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+Requisitos Não Funcionais:Compatibilidade
+Backup e Recuperação
+Localização e Internacionalização
+Segurança
+Integridade dos Dados
+Escalabilidade
+Tempo de Resposta
+Gerenciamento de Carga
+Atualizações e Manutenção
 
 ## User Flow
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-**Links Úteis**:
-
-- [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-- [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-- [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+![fluxodousuario](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-m-20241-g3-descontrole-financeiro/assets/88544050/2244d6b7-1689-42f7-b262-9e1d04e40984)
 
 ## Wireframes
 
-Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
-
-**Links Úteis**:
-
-- [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-- [Figma](https://www.figma.com/)
-- [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-- [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+![wireframe](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-m-20241-g3-descontrole-financeiro/assets/88544050/73f3d780-53b9-4837-8711-afe5fc1f2625)
 
 ## Gestão de Projetos
 
- Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
+![kanban](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-m-20241-g3-descontrole-financeiro/assets/88544050/c322b1c5-b8ab-45fc-95a3-0e8ca9136b44)
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+## Referencias 
 
-**Links Úteis**:
+https://meubolsoemdia.com.br
 
-- [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-- [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-- [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-- [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-- [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+https://www.youtube.com/@CVMEducacional
+
+https://creately.com/blog/pt/diagrama/como-fazer-um-diagrama-de-fluxo-do-usuario/
+
+https://help.marvelapp.com/hc/en-us/articles/360002536038-A-guide-to-creating-your-first-prototype
+
+https://blog.softexpert.com/gestao-da-inovacao-como-escolher-e-implementar-as-melhores-ideias/#:~:text=O%20que%20%C3%A9%20a%20prioriza%C3%A7%C3%A3o,determinados%20crit%C3%A9rios%20estabelecidos%20pela%20organiza%C3%A7%C3%A3o.
+
+https://uds.com.br/blog/design-thinking-o-que-e-e-como-aplicar/
+
