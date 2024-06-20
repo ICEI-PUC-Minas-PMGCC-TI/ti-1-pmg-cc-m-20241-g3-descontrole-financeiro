@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metas do Usuário</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll;
+      background: linear-gradient(90deg, #000, #005f5f);
+      color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-container {
+      width: 20%;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .goal-card {
+      background-color: #fff;
+      color: #000;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      margin: 5px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      cursor: grab;
+    }
+
+    .goal-card h2 {
+      width: 100%;
+      font-size: 18px;
+      font-weight: bold;
+      color:  #3cb371;
+      text-align: center;
+      margin: 0;
+      padding: 5px 0;
+    }
+
+    .goal-card p {
+      width: 100%;
+      font-size: 12px;
+      word-wrap: break-word;
+      white-space: normal;
+      color: #000;
+      text-align: left;
+    }
+
+    .delete-button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      background-color: #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .progress-bar {
+      width: 0;
+      height: 10px;
+      background-color: #3cb371;
+      border-radius: 5px;
+    }
+
+    .progress-text {
+      font-size: 14px;
+      color: #000;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: left;
+      color: #3cb371;
+    }
+
+    h2 {
+      font-size: 40px;
+      text-align: center;
+      color: white;
+    }
+
+    #goalsList {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    form {
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label, input, button {
+      display: block;
+      margin-bottom: 5px;
+      width: calc(100% - 25px);
+      font-size: 14px;
+    }
+
+    input[type="number"], input[type="text"] {
+      width: 100%;
+      padding: 6px;
+      margin: 3px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 12px;
+      background-color: #444;
+      color: #f0f0f0;
+    }
+
+    button {
+      padding: 8px 16px;
+      background: linear-gradient(90deg, #000, #005f5f);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #005f5f, #000);
+    }
+
+    .resultado {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    .botao-home {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 9999;
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      color: #f0f0f0;
+      cursor: pointer;
+    }
+
+    label {
+      color: black;
+    }
+
+    body::-webkit-scrollbar {
+      width: 10px;
+      background-color: #444;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: #3cb371;
+      border-radius: 5px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .form-container {
+        width: 80%;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .goal-card {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+    .cardadd {
+      color: black;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h2>Metas do usuário</h2>
+  <a href="..//pages/telainicial.html" class="botao-home">&#8962;</a>
+  <div class="container">
+    <div class="form-container">
+      <h1>Adicionar Nova Meta</h1>
+      <form id="addGoalForm">
+        <label for="category">Título:</label>
+        <input type="text" id="category" name="category" maxlength="25" required>
+
+        <label for="goalDescription">Descrição:</label>
+        <input type="text" id="goalDescription" name="goalDescription" maxlength="50" required>
+
+        <label for="goalCost">Custo:</label>
+        <input type="number" id="goalCost" name="goalCost" required>
+
+        <button type="submit">Adicionar Meta</button>
+      </form>
+    </div>
+    <div class="goals-container">
+      <div id="goalsList"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const goalsList = document.getElementById('goalsList');
+      let goals = JSON.parse(localStorage.getItem('userGoals')) || [];
+
+      const createGoalDiv = (goal, index) => {
+        const goalDiv = document.createElement('div');
+        goalDiv.classList.add('goal-card');
+        goalDiv.setAttribute('draggable', 'true');
+
+        goalDiv.innerHTML = `
+          <button class="delete-button">&times;</button>
+          <h2>${goal.category}</h2>
+          <p>${goal.goalDescription}</p>
+          <p><strong>Custo:</strong> ${goal.goalCost}</p>
+          <p><strong>Valor Destinado:</strong> <span class="amountAllocated">${goal.amountAllocated}</span></p>
+          <p class="progress-text"><strong>Progresso:</strong> <span class="progress">${goal.progress}%</span></p>
+          <div class="progress-bar-container">
+            <div class="progress-bar" style="width: ${goal.progress}%"></div>
+          </div>
+          <input placeholder="Digite o Valor Destinado" type="number" class="addAmount" name="addAmount" min="0" step="0.01">
+          <button class="updateGoal">Atualizar Valor</button>
+        `;
+
+        const deleteButton = goalDiv.querySelector('.delete-button');
+        deleteButton.addEventListener('click', () => {
+          goals.splice(index, 1);
+          localStorage.setItem('userGoals', JSON.stringify(goals));
+          displayUserGoals(goals);
+        });
+
+        const addAmountInput = goalDiv.querySelector('.addAmount');
+        const updateGoalButton = goalDiv.querySelector('.updateGoal');
+
+        updateGoalButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          const additionalAmount = parseFloat(addAmountInput.value);
+          if (!isNaN(additionalAmount) && additionalAmount > 0) {
+            goal.amountAllocated += additionalAmount;
+            if (goal.amountAllocated > goal.goalCost) {
+              goal.amountAllocated = goal.goalCost;
+            }
+            goal.progress = ((goal.amountAllocated / goal.goalCost) * 100).toFixed(2);
+
+            goalDiv.querySelector('.amountAllocated').textContent = goal.amountAllocated;
+            goalDiv.querySelector('.progress-text .progress').textContent = `${goal.progress}%`;
+            goalDiv.querySelector('.progress-bar').style.width = `${goal.progress}%`;
+            addAmountInput.value = '';
+
+            localStorage.setItem('userGoals', JSON.stringify(goals));
+          }
+        });
+
+        goalDiv.addEventListener('dragstart', (e) => {
+          e.dataTransfer.setData('text/plain', index);
+        });
+
+        goalDiv.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          goalDiv.style.border = '2px dashed #005f5f';
+        });
+
+        goalDiv.addEventListener('dragleave', () => {
+          goalDiv.style.border = 'none';
+        });
+
+        goalDiv.addEventListener('drop', (e) => {
+          e.preventDefault();
+          goalDiv.style.border = 'none';
+          const draggedIndex = e.dataTransfer.getData('text/plain');
+          const targetIndex = index;
+
+          if (draggedIndex !== targetIndex) {
+            const draggedGoal = goals[draggedIndex];
+            goals.splice(draggedIndex, 1);
+            goals.splice(targetIndex, 0, draggedGoal);
+            localStorage.setItem('userGoals', JSON.stringify(goals));
+            displayUserGoals(goals);
+          }
+        });
+
+        return goalDiv;
+      };
+
+      const displayUserGoals = (userGoals) => {
+        goalsList.innerHTML = '';
+
+        userGoals.forEach((goal, index) => {
+          const goalDiv = createGoalDiv(goal, index);
+          goalsList.prepend(goalDiv);
+        });
+      };
+
+      displayUserGoals(goals);
+
+      document.getElementById('addGoalForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(e.target);
+        const category = formData.get('category');
+        const goalDescription = formData.get('goalDescription');
+        const goalCost = parseFloat(formData.get('goalCost'));
+        const amountAllocated = 0;
+        const progress = 0;
+
+        const newGoal = {
+          category,
+          goalDescription,
+          goalCost,
+          amountAllocated,
+          progress
+        };
+
+        goals.push(newGoal);
+        localStorage.setItem('userGoals', JSON.stringify(goals));
+
+        const newGoalDiv = createGoalDiv(newGoal, goals.length - 1);
+        goalsList.prepend(newGoalDiv);
+
+        e.target.reset();
+      });
+    });
+  </script>
+</body>
+</html>
