@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informação do Usuário</title>
+    <link rel="stylesheet" href="conta.css">
+    <script>
+        function fillFormFields() {
+            var usuario = JSON.parse(localStorage.getItem('usuario'));
+            document.getElementById('nome').value = usuario.nome;
+            document.getElementById('email').value = usuario.email;
+            document.getElementById('data').value = usuario.dataNascimento;
+            document.getElementById('telefone').value = usuario.telefone;
+        }
+
+        function enableEditing() {
+            var fields = document.querySelectorAll('.form-group input');
+            fields.forEach(function(field) {
+                field.removeAttribute('readonly');
+            });
+        }
+
+        function validateForm() {
+            return true;
+        }
+    </script>
+</head>
+<video id="video-background" autoplay loop muted>
+    <source src="videofundo.mp4" type="video/mp4">
+</video>
+<body onload="fillFormFields()">
+    <div class="container">
+        <h2>Informação do Usuário</h2>
+        <form action="/submit_form" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" readonly>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" readonly>
+            </div>
+            <div class="form-group">
+                <label for="data">Data de nascimento:</label>
+                <input type="date" id="data" name="data" readonly>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" readonly>
+            </div>
+        </form>
+        <div class="form-group">
+            <a href="editarusuario.html">
+                <button type="button" onclick="enableEditing()">Editar</button>
+            </a>
+        </div>
+        <div class="back-button">
+            <a href="telainicial.html">
+                <button type="button">Voltar</button>
+            </a>
+        </div>
+    </body>
+    </div>
+</body>
+</html>

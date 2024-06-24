@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="conta.css">
+    <script>
+        function validateForm(event) {
+            var senha = document.getElementById("senha").value;
+            var confirmarSenha = document.getElementById("confirmar-senha").value;
+            if (senha !== confirmarSenha) {
+                alert("As senhas não coincidem. Por favor, tente novamente.");
+                event.preventDefault();
+                return false;
+            } else {
+                var usuario = {
+                    nome: document.getElementById("nome").value,
+                    email: document.getElementById("email").value,
+                    dataNascimento: document.getElementById("data").value,
+                    telefone: document.getElementById("telefone").value
+                };
+                localStorage.setItem('usuario', JSON.stringify(usuario));
+
+                event.preventDefault(); 
+                window.location.href = "telainicial.html";
+                return true;
+            }
+        }
+    </script>
+</head>
+<video id="video-background" autoplay loop muted>
+    <source src="videofundo.mp4" type="video/mp4">
+</video>
+<body>
+    <div class="container">
+        <h2>Alteração das informações</h2>
+        <form onsubmit="validateForm(event)">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data de nascimento:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmar-senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar_senha" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Confirmar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
