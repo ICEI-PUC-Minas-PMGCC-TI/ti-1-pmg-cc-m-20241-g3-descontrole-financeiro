@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trocar de Gerenciamento</title>
+<link rel="stylesheet" href="config.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="account" id="account1">
+        <h2>Gerenciamento 1</h2>
+        <p>Este é o gerenciamento número 1.</p>
+    </div>
+    <div class="account" id="account2" style="display: none;">
+        <h2>Gerenciamento 2</h2>
+        <p>Este é o gerenciamento número 2.</p>
+    </div>
+    <button onclick="trocarGerenciamento()">Trocar de Gerenciamento</button>
+    <br>
+    <a href="telainicial.html" class="back-btn">Voltar para a Tela Inicial</a>
+</div>
+
+<script>
+    var estadoGerenciamento = localStorage.getItem('estadoGerenciamento');
+
+    if (estadoGerenciamento === 'gerenciamento2') {
+        document.getElementById('account1').style.display = 'none';
+        document.getElementById('account2').style.display = 'block';
+    }
+
+    function trocarGerenciamento() {
+        var gerenciamento1 = document.getElementById('account1');
+        var gerenciamento2 = document.getElementById('account2');
+
+        if (gerenciamento1.style.display !== 'none') {
+            gerenciamento1.style.display = 'none';
+            gerenciamento2.style.display = 'block';
+            localStorage.setItem('estadoGerenciamento', 'gerenciamento2'); 
+        } else {
+            gerenciamento1.style.display = 'block';
+            gerenciamento2.style.display = 'none';
+            localStorage.setItem('estadoGerenciamento', 'gerenciamento1'); 
+        }
+    }
+</script>
+
+</body>
+<video id="video-background" autoplay loop muted>
+    <source src="videofundo.mp4" type="video/mp4">
+</video>
+</html>
