@@ -20,16 +20,6 @@ desenvolvimento, implementação e manutenção do aplicativo.
 ## Professores responsáveis
 
 * Rommel Vieira Carneiro
-* Luciana Mara Freitas Diniz
-* João Carlos Oliveira Caetano
-=======
-* Arthur Augusto
-* Filipe Reis
-* Guilherme Alves
-* Leonardo Rodrigues
-## Professores responsáveis
-
-* Rommel Vieira Carneiro
 * João Carlos Oliveira Caetano
 * Luciana Mara Freitas Diniz
 * Pedro Henrique Ramos Costa
