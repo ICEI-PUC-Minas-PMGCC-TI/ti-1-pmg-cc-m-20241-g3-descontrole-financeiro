@@ -11,32 +11,57 @@
             padding: 0;
             background: linear-gradient(90deg, #000, #005f5f);
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
-        h1 {
-            color: #fff;
-            font-size: 45px;
-            text-align: center;
-            margin-top: 20px;
+        .input-container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .input-container input[type="text"] {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            flex: 1;
+            max-width: 300px;
         }
 
         .chat-container {
+            width: 100%;
             max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .messages {
-            max-height: 300px;
+            flex: 1; /* Ocupa todo o espaço disponível no contêiner */
             overflow-y: auto;
-            margin-bottom: 20px;
+            padding: 10px;
         }
 
         .message {
             margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            color: #000;
+            word-wrap: break-word;
         }
 
         .message .username {
@@ -47,112 +72,130 @@
             margin-left: 10px;
         }
 
-        input, button {
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            margin-top: 5px;
+        .message.credit-card {
+            background-color: #e6f7ff;
         }
 
         button {
-            background: linear-gradient(90deg, #000, #005f5f);
+            background-color: #005f5f;
             color: #fff;
             cursor: pointer;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
         }
 
         button:hover {
-            background: linear-gradient(90deg, #005f5f, #000);
+            background-color: #004d4d;
         }
 
-        #backButton a {
-            color: white;
-            text-decoration: none;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        .header-left {
-            display: flex;
-            align-items: center;
-        }
-
-        .header-left i {
-            font-size: 36px;
-            margin-right: 10px;
-        }
-
-        .container {
-            margin-top: 100px;
-        }
         .botao-home {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              z-index: 9999;
-              background-color: transparent;
-              border: none;
-              font-size: 24px;
-              color: white;
-              cursor: pointer;
-          }
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <a href="telainicial.html" class="botao-home">&#8962;</a>
-            <h1>Comunidade de Usuários</h1>
+    <div class="input-container">
+        <input type="text" id="username" placeholder="Seu nome">
+        <input type="text" id="messageInput" placeholder="Escreva sua mensagem...">
+        <button id="sendButton">Enviar</button>
+        <button id="clearButton">Limpar</button>
+    </div>
 
-    <div class="container">
-        <div class="chat-container">
-            <div class="messages" id="messages"></div>
-            <input type="text" id="username" placeholder="Seu nome">
-            <input type="text" id="messageInput" placeholder="Escreva sua mensagem...">
-            <button id="sendButton">Enviar</button>
+    <a href="telainicial.html" class="botao-home">&#8962;</a>
+
+    <div class="chat-container">
+        <div class="messages" id="messages">
+            <div class="message credit-card">
+                <span class="username">Marcus:</span>
+                <span class="text">Prezados usuários, lembrem-se de manter suas faturas em dia para evitar juros altos.</span>
+            </div>
+            <div class="message">
+                <span class="username">Maria:</span>
+                <span class="text">Alguém sabe como funciona o parcelamento da fatura do cartão de crédito?</span>
+            </div>
+            <div class="message credit-card">
+                <span class="username">João:</span>
+                <span class="text">É importante verificar as taxas de juros antes de utilizar o crédito rotativo.</span>
+            </div>
+            
+            <!-- Mensagens fictícias adicionadas diretamente no HTML -->
+            <div class="message">
+                <span class="username">Ana:</span>
+                <span class="text">Qual é a melhor forma de usar o limite do cartão sem comprometer o orçamento?</span>
+            </div>
+            <div class="message credit-card">
+                <span class="username">Pedro:</span>
+                <span class="text">Dicas para evitar o endividamento com cartão de crédito?</span>
+            </div>
+            <div class="message">
+                <span class="username">Carla:</span>
+                <span class="text">É possível negociar a anuidade do cartão de crédito?</span>
+            </div>
         </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const sendButton = document.getElementById('sendButton');
+            const clearButton = document.getElementById('clearButton');
             const usernameInput = document.getElementById('username');
             const messageInput = document.getElementById('messageInput');
             const messagesContainer = document.getElementById('messages');
 
-            // Carregar mensagens do localStorage
-            const messages = JSON.parse(localStorage.getItem('messages')) || [];
-
             function renderMessages() {
-                messagesContainer.innerHTML = '';
+                const messages = messagesContainer.querySelectorAll('.message');
+                messagesContainer.innerHTML = ''; // Limpa o conteúdo para re-renderizar
+
                 messages.forEach(message => {
-                    const messageElement = document.createElement('div');
-                    messageElement.className = 'message';
-                    messageElement.innerHTML = `<span class="username">${message.username}:</span> <span class="text">${message.text}</span>`;
-                    messagesContainer.appendChild(messageElement);
+                    messagesContainer.appendChild(message.cloneNode(true));
                 });
+
                 messagesContainer.scrollTop = messagesContainer.scrollHeight;
             }
 
-            sendButton.addEventListener('click', function() {
+            sendButton.addEventListener('click', sendMessage);
+            messageInput.addEventListener('keypress', function(event) {
+                if (event.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+
+            function sendMessage() {
                 const username = usernameInput.value.trim();
                 const messageText = messageInput.value.trim();
 
                 if (username && messageText) {
-                    const message = {
-                        username: username,
-                        text: messageText,
-                        timestamp: Date.now()
-                    };
-                    messages.push(message);
-                    localStorage.setItem('messages', JSON.stringify(messages));
-                    renderMessages();
+                    const message = document.createElement('div');
+                    message.className = 'message';
+                    message.innerHTML = `<span class="username">${username}:</span> <span class="text">${messageText}</span>`;
+                    if (messageText.toLowerCase().includes('cartão de crédito')) {
+                        message.classList.add('credit-card');
+                    }
+
+                    messagesContainer.insertBefore(message, messagesContainer.firstChild);
                     messageInput.value = '';
+
+                    // Atualiza o tamanho do contêiner de mensagens
+                    messagesContainer.style.height = `${messagesContainer.scrollHeight}px`;
                 }
-            });
+            }
+
+            clearButton.addEventListener('click', clearMessages);
+
+            function clearMessages() {
+                messagesContainer.innerHTML = ''; // Limpa todas as mensagens
+                messagesContainer.style.height = 'auto'; // Redefine a altura para automático
+            }
 
             renderMessages();
         });
